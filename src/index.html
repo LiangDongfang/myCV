@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>梁东方的简历</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -14,65 +15,6 @@
     <div id="div"></div>
   </div>
 
-
-  <!-- 写在上面<style/>中会被删除 -->
-  <style>
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    #html {
-      word-break: break-all;
-    }
-
-
-    #divWarper {
-      position: relative;
-    }
-
-    #div {
-      position: fixed;
-      top: 20px;
-      right: 50%;
-    }
-
-    #div::before {
-      position: absolute;
-      content: '';
-      display: block;
-    }
-
-    #div::after {
-      position: absolute;
-      content: '';
-      display: block;
-    }
-
-    @media(max-width: 500px) {
-      #html {
-        height: 50vh;
-        overflow: auto;
-      }
-
-      #divWarper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-      }
-
-      #div {
-        position: relative;
-        top: 0;
-        right: 0;
-      }
-
-    }
-  </style>
   <script src="./main.js"></script>
 </body>
 

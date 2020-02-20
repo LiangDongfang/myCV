@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#html {
+  word-break: break-all;
+}
+
+
+#divWarper {
+  position: relative;
+}
+
+#div {
+  position: fixed;
+  top: 20px;
+  right: 50%;
+}
+
+#div::before {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+#div::after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+@media(max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #divWarper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  #div {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+}
